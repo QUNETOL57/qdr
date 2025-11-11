@@ -99,7 +99,7 @@ def format_report(parsed_data: dict) -> str:
     return '\n'.join(report_lines)
 
 
-async def handle_message(update: Update) -> None:
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_message = update.message.text
     user_name = update.effective_user.first_name
     user_id = update.effective_user.id
