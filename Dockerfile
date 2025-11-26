@@ -2,7 +2,7 @@
 FROM python:3.13-slim
 
 # Устанавливаем рабочую директорию
-WORKDIR /app
+WORKDIR /qdr
 
 # Копируем файл с зависимостями
 COPY requirements.txt .
