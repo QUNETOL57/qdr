@@ -1,7 +1,7 @@
 services:
   qdr:
     build: .
-    container_name: app
+    container_name: qdr
     restart: unless-stopped
     env_file:
       - .env
